@@ -24,7 +24,7 @@ func WorkWithTemp() error {
 	defer os.RemoveAll(t)
 
 	// the directory must exist to create the temp file
-	// t is an *os.File object
+	// tf is an *os.File object
 	tf, err := ioutil.TempFile(t, "tmp")
 	if err != nil {
 		return err
