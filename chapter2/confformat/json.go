@@ -38,7 +38,6 @@ func OtherJSONExamples() error {
 	if err != nil {
 		return err
 	}
-
 	fmt.Println("We can unmarshal into a map instead of a struct:", res)
 
 	r := bytes.NewReader([]byte(`{"key2":"value2"}`))
@@ -46,7 +45,6 @@ func OtherJSONExamples() error {
 	if err := decoder.Decode(&res); err != nil {
 		return err
 	}
-
 	fmt.Println("We can also use decoders / encoders to work with streams:", res)
 
 	return nil
