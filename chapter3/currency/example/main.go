@@ -20,5 +20,5 @@ func main() {
 	pennies += 15
 
 	dollars := currency.ConvertPenniesToDollarString(pennies)
-	fmt.Printf("Added 15 cents, new value is %d dollars\n", dollars)
+	fmt.Printf("Added 15 cents, new value is %s dollars\n", dollars)
 }
